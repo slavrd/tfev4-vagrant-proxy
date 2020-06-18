@@ -1,4 +1,4 @@
-TFE / Proxy Lab
+# TFE / Proxy Lab
 
 A two node Vagrant project demonstrating TFE using HTTP proxy.
 
