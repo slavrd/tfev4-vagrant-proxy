@@ -4,6 +4,17 @@ ptfe_ext_ip = ptfe_int_ip
 proxy_int_ip = "192.168.56.10"
 
 Vagrant.configure("2") do |config|
+
+  config.vm.define "proxy" do |proxy|
+    proxy.vm.box = "slavrd/bionic64"
+
+    proxy.vm.hostname = "tfe-proxy"
+    proxy.vm.network "private_network", ip: proxy_int_ip
+    proxy.vm.provision "shell" do |s|
+      s.path = "scripts/install_squid_proxy.sh"
+    end 
+
+  end
  
   config.vm.define "tfe" do |tfe|
 
@@ -26,17 +37,6 @@ Vagrant.configure("2") do |config|
                 PROXY_ADDR: "http://#{proxy_int_ip}:3128"
               } 
     end 
-  end
-
-  config.vm.define "proxy" do |proxy|
-    proxy.vm.box = "slavrd/bionic64"
-
-    proxy.vm.hostname = "tfe-proxy"
-    proxy.vm.network "private_network", ip: proxy_int_ip
-    proxy.vm.provision "shell" do |s|
-      s.path = "scripts/install_squid_proxy.sh"
-    end 
-
   end
   
 end
