@@ -2,7 +2,7 @@
 
 A two node Vagrant project demonstrating TFE using HTTP proxy.
 
-The Vagrant file defines two VM
+The Vagrant file defines two VMs
 
 * `proxy` - has Squid proxy installed
 * `tfe` - has TFE installed in poc mode using self-signed certificate. Installation is online.
