@@ -1,4 +1,3 @@
-ptfe_fqdn = "192.168.56.33.xip.io"
 ptfe_int_ip = "192.168.56.33"
 ptfe_ext_ip = ptfe_int_ip 
 proxy_int_ip = "192.168.56.10"
@@ -33,7 +32,6 @@ Vagrant.configure("2") do |config|
       s.privileged = true
       s.env = { PTFE_PRIVATE_IP: ptfe_int_ip, 
                 PTFE_PUBLIC_IP: ptfe_ext_ip, 
-                PTFE_FQDN: ptfe_fqdn,
                 PROXY_ADDR: "http://#{proxy_int_ip}:3128"
               } 
     end 
