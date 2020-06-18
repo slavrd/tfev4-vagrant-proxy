@@ -1,4 +1,4 @@
-ptfe_fqdn = "tfev4-local.work.slavrd.eu"
+ptfe_fqdn = "192.168.56.33.xip.io"
 ptfe_int_ip = "192.168.56.33"
 ptfe_ext_ip = ptfe_int_ip 
 proxy_int_ip = "192.168.56.10"
