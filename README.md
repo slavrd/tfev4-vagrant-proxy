@@ -31,7 +31,7 @@ At this point
 
 * check the squid proxy logs for connection events
 
-  `sudo cat /var/logs/squid/access.log`
+  `sudo cat /var/log/squid/access.log`
 
   There should be messages that look like
 
