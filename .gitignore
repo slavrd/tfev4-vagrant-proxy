@@ -1,0 +1,5 @@
+# TFE licences
+*.rli
+
+# Vagrant directory
+.vagrant/
