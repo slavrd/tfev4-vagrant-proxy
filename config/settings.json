@@ -1,0 +1,32 @@
+{
+    "capacity_concurrency": {
+        "value": "10"
+    },
+    "capacity_memory": {
+        "value": "512"
+    },
+    "custom_image_tag": {
+        "value": "hashicorp/build-worker:now"
+    },
+    "enable_metrics_collection": {
+        "value": "1"
+    },
+    "enc_password": {
+        "value": "Password123#"
+    },
+    "hostname": {
+        "value": "192.168.56.33.xip.io"
+    },
+    "iact_subnet_time_limit": {
+        "value": "60"
+    },
+    "installation_type": {
+        "value": "poc"
+    },
+    "tbw_image": {
+        "value": "default_image"
+    },
+    "tls_vers": {
+        "value": "tls_1_2_tls_1_3"
+    }
+}
